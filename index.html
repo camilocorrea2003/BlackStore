@@ -476,7 +476,6 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#" onclick="toggleAdmin()">Admin</a></li>
                 </ul>
             </nav>
         </div>
@@ -684,8 +683,15 @@
             }, 3000);
         }
 
-        // Funciones de administración
+        // Funciones de administración (OCULTAS)
         function toggleAdmin() {
+            // Verificar contraseña
+            const password = prompt("Ingresa la contraseña de administrador:");
+            if (password !== "blackstore2025") {
+                alert("Contraseña incorrecta");
+                return;
+            }
+            
             const adminPanel = document.getElementById('adminPanel');
             adminPanel.style.display = adminPanel.style.display === 'none' ? 'block' : 'none';
         }

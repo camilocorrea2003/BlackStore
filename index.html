@@ -613,7 +613,9 @@
                 productCard.className = 'product-card';
                 productCard.innerHTML = `
                     <div class="product-image">
-                        ${product.image}
+    ${product.image.startsWith('http') || product.image.startsWith('imagenes/')
+        ? `<img src="${product.image}" alt="${product.name}" class="product-img">`
+        : product.image}
                     </div>
                     <div class="product-info">
                         <h3>${product.name}</h3>

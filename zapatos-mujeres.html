@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zapatos para Mujeres</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .products-container {
+      max-width: 1200px;
+      margin: 5rem auto 2rem;
+      padding: 0 2rem;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .product-image {
+      height: 200px;
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .product-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 1rem;
+    }
+    .product-info h3 {
+      font-size: 1.2rem;
+      color: white;
+    }
+    .product-price {
+      color: #ff6b6b;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="products-container">
+    <h2 class="section-title">👟 Zapatos para Mujeres</h2>
+    <div class="product-grid">
+      
+<div class="product-card">
+  <div class="product-image">
+    <img src="imagenes/zapato-mujer1.jpg" alt="Zapato Rosado Glam" class="product-img">
+  </div>
+  <div class="product-info">
+    <h3>Zapato Rosado Glam</h3>
+    <div class="product-price">$170.000</div>
+  </div>
+</div>
+
+<div class="product-card">
+  <div class="product-image">
+    <img src="imagenes/zapato-mujer2.jpg" alt="Zapato Fashion Blanco" class="product-img">
+  </div>
+  <div class="product-info">
+    <h3>Zapato Fashion Blanco</h3>
+    <div class="product-price">$165.000</div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</body>
+</html>

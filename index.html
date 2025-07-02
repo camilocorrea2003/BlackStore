@@ -525,32 +525,59 @@
     </section>
     
     <!-- Catálogo -->
+    
+        <!-- Nuevo Catálogo -->
 <section class="catalogo" id="catalogo">
-    <div class="products-container">
-        <h2 class="section-title">Catálogo</h2>
+  <div class="products-container">
+    <h2 class="section-title">Catálogo</h2>
 
-        <h3 style="margin-bottom: 1rem;">👟 Zapatos</h3>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="imagenes/airforce.jpeg" alt="Air Force" class="product-img">
-                </div>
-                <div class="product-info">
-                    <h3>Nike Air Force</h3>
-                    <div class="product-price">$180.000</div>
-                    <button class="add-to-cart" onclick="addToCart(101)">Agregar al Carrito</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="imagenes/lacosteb.jpeg" alt="Lacoste" class="product-img">
-                </div>
-                <div class="product-info">
-                    <h3>Lacoste Black Edition</h3>
-                    <div class="product-price">$210.000</div>
-                    <button class="add-to-cart" onclick="addToCart(102)">Agregar al Carrito</button>
-                </div>
-            </div>
+    <!-- Zapatos -->
+    <h3 style="margin: 2rem 0 1rem;">👟 Zapatos</h3>
+    <div class="product-grid">
+      <div class="product-card" onclick="location.href='zapatos-hombres.html'">
+        <div class="product-image">
+          <img src="imagenes/zapatos-hombres.jpg" alt="Zapatos Hombres" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3>Hombres</h3>
+          <div class="product-price">Ver Catálogo</div>
+        </div>
+      </div>
+      <div class="product-card" onclick="location.href='zapatos-mujeres.html'">
+        <div class="product-image">
+          <img src="imagenes/zapatos-mujeres.jpg" alt="Zapatos Mujeres" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3>Mujeres</h3>
+          <div class="product-price">Ver Catálogo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lociones -->
+    <h3 style="margin: 3rem 0 1rem;">🧴 Lociones</h3>
+    <div class="product-grid">
+      <div class="product-card" onclick="location.href='lociones-hombres.html'">
+        <div class="product-image">
+          <img src="imagenes/lociones-hombres.jpg" alt="Lociones Hombres" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3>Hombres</h3>
+          <div class="product-price">Ver Catálogo</div>
+        </div>
+      </div>
+      <div class="product-card" onclick="location.href='lociones-mujeres.html'">
+        <div class="product-image">
+          <img src="imagenes/lociones-mujeres.jpg" alt="Lociones Mujeres" class="product-img">
+        </div>
+        <div class="product-info">
+          <h3>Mujeres</h3>
+          <div class="product-price">Ver Catálogo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
             <!-- Puedes agregar más zapatos aquí -->
         </div>
 
